@@ -4,11 +4,13 @@
 
 Summary: console Pandora.com client
 Name: pianobar
-Version: 2011.09.22
+Version: 2011.12.11
 Release: 1%{?dist}
 License: GPL
 Group: Applications/Multimedia
 URL: http://6xq.net/html/00/17.html
+
+Packager: Erik J. Weiss <eweiss@nmt.edu>
 
 Source: http://6xq.net/static/projects/pianobar/pianobar-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
@@ -25,9 +27,9 @@ Features:
 
 * Create, delete, rename stations and add more music
 * Rate and temporary ban tracks as well as move them to another station
-* “Shared stations”
+* âShared stationsâ
 
-and some that pandora does not have (yet):
+
 
 * last.fm scrobbling (using an external scrobbler)
 * Proxy support for non-americans
@@ -91,6 +93,9 @@ you will need to install libpiano-devel.
 %exclude %{_libdir}/*.a
 
 %changelog
+* Wed Jan 04 2012 Erik J. Weiss <eweiss@nmt.edu> -2011.12.11-1
+- Updated to pianobar-2011.12.11
+
 * Fri Sep 23 2011 Steve Huff <shuff@vecna.org> - 2011.09.22-1
 - Updated to pianobar-2011.09.22
 
